@@ -11,7 +11,7 @@ Uses Python to explore data related to bike share systems for three major cities
 chicago.csv
 washington.csv
 new_york_city.csv
-bikeshare.csv
+bikeshare.py
 
 ### Credits
 The following are references used to assist me in the completion of this project:
