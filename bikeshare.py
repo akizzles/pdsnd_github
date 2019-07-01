@@ -9,6 +9,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october'\
                  'november', 'december']
 
+WEEK = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+
 """
 Sources/References:
 1)	https://docs.python.org/3/tutorial/errors.html
@@ -55,7 +57,7 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input("Please enter 'all' for weekly data, or the day of interest.\n").lower()
-        if day in ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
+        if day in WEEK or day == 'all':
             break
         else:
             print("The entry for day is not recognized. Please re-enter the day by 3-letter abbreviation or 'all'.\n")
@@ -87,7 +89,7 @@ def load_data(city, month, day):
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
-        month = months.index(month) + 1
+        month = MONTHS.index(month) + 1
 
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
