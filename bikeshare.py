@@ -6,16 +6,6 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-"""
-Sources/References:
-1)	https://docs.python.org/3/tutorial/errors.html
-2)	Mentor email and 1:1 call
-3)	https://knowledge.udacity.com/questions/44837
-4)	https://knowledge.udacity.com/questions/36830
-5)	https://knowledge.udacity.com/questions/33164
-6)	https://knowledge.udacity.com/questions/7855
-"""
-
 
 def get_filters():
     """
