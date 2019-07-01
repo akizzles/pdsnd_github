@@ -6,6 +6,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october'\
+                 'november', 'december']
+
 """
 Sources/References:
 1)	https://docs.python.org/3/tutorial/errors.html
@@ -44,8 +47,7 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
         month = input("Please enter 'all' for annual data, or the month of interest.\n").lower()
-        if month in ('all', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', \
-                     'october', 'november', 'december'):
+        if month in MONTHS or month == 'all':
             break
         else:
             print("The entry for month is not recognized. Please re-enter the month by 3-letter abbreviation or 'all'.\n")
@@ -85,8 +87,6 @@ def load_data(city, month, day):
     # filter by month if applicable
     if month != 'all':
         # use the index of the months list to get the corresponding int
-        months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october'\
-                 'november', 'december']
         month = months.index(month) + 1
 
         # filter by month to create the new dataframe
