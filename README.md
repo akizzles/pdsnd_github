@@ -8,16 +8,16 @@ Exploring US Bikeshare Data
 Uses Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. Data is imported and computes descriptive statistics to answer various questions.
 
 ### Files used
-chicago.csv
-washington.csv
-new_york_city.csv
-bikeshare.py
+* chicago.csv
+* washington.csv
+* new_york_city.csv
+* bikeshare.py
 
 ### Credits
 The following are references used to assist me in the completion of this project:
-https://docs.python.org/3/tutorial/errors.html
-https://knowledge.udacity.com/questions/44837
-https://knowledge.udacity.com/questions/36830
-https://knowledge.udacity.com/questions/33164
-https://knowledge.udacity.com/questions/7855
+* https://docs.python.org/3/tutorial/errors.html
+* https://knowledge.udacity.com/questions/44837
+* https://knowledge.udacity.com/questions/36830
+* https://knowledge.udacity.com/questions/33164
+* https://knowledge.udacity.com/questions/7855
 
